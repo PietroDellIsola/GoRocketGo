@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="it.unisa.pietrodellisola.gorocketgo">
 
     <application
@@ -25,15 +26,15 @@
         <activity
             android:name=".GameOverActivity"
             android:screenOrientation="portrait"> <!-- blocca L'ACTIVITY NON L'APPLICATION su portrait -->
-            ></activity>
+        </activity>
         <activity
             android:name=".CustomizationActivity"
             android:screenOrientation="portrait"> <!-- blocca L'ACTIVITY NON L'APPLICATION su portrait -->
-            ></activity>
+        </activity>
         <activity
             android:name=".ControlsActivity"
             android:screenOrientation="portrait"> <!-- blocca L'ACTIVITY NON L'APPLICATION su portrait -->
-            ></activity>
+        </activity>
     </application>
 
 </manifest>
