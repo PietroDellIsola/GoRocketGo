@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_bottoni">280dp</dimen>
+    <dimen name="padding_button">15dp</dimen>
+    <dimen name="size_text_button">27sp</dimen>
+    <dimen name="padding_istruzioni">20dp</dimen>
+    <dimen name="size_istruzioni">25sp</dimen>
+    <dimen name="margini_bottoni">5dp</dimen>
+</resources>

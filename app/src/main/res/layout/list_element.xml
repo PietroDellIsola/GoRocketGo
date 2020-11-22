@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/buttonNomeOggetto"
+        android:onClick="visualizzaOggettoSelezionato"
+        android:text="PROVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:padding="13dp"
+        android:id="@+id/buttonSalvaOggetto"
+        android:onClick="salvaOggettoSelezionato"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--COLORE E TESTO DEL SECONDO BOTTONE AGGIUNTO ALL'INTERNO DI CUSTOM ADAPTER-->
+
+
+</RelativeLayout>

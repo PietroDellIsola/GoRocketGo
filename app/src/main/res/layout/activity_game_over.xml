@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:scaleType="fitXY"-->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_signal"
+        />
+
+
+    <TextView
+        android:id="@+id/tvNuovoRecord"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/tvSignalLostRecord"
+        android:textColor="#ff0000"
+        android:text="@string/gameover_nuovo_record"
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvSignalLostRecord"
+        android:textColor="#FFBBBB"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tvSignalLost"
+        android:textSize="50sp"
+        android:text="RECORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvSignalLost"
+        android:layout_centerInParent="true"
+        android:text="Signal lost.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:text="Rientra"
+        android:onClick="rientra"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSignalLost"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/my_button"
+        android:textColor="@color/textButtonColor"/>
+
+</RelativeLayout>

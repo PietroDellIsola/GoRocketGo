@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_margin="@dimen/margini_bottoni"
+        android:text="Indietro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="23sp"
+        android:onClick="onClickindietro"
+        android:padding="10dp"
+        android:background="@drawable/my_button"
+        android:textColor="@color/textButtonColor"/>
+
+    <TextView
+        android:padding="@dimen/padding_istruzioni"
+        android:gravity="center"
+        android:textSize="@dimen/size_istruzioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/istruzioni"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupComandi"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/comando1"
+            android:text="@string/comando1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/comando2"
+            android:text="@string/comando2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/testoComandi"
+        android:padding="@dimen/padding_istruzioni"
+        android:gravity="center"
+        android:textSize="@dimen/size_istruzioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dettagli_comando_selezionato1"/>
+
+    <ImageView
+        android:id="@+id/immagineComandi"
+        android:layout_gravity="center"
+        android:background="@drawable/comando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="@dimen/padding_istruzioni"
+        android:gravity="center"
+        android:textSize="@dimen/size_istruzioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Difficoltà: "/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDifficolta"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/difficolta1"
+            android:text="@string/difficolta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/difficolta2"
+            android:text="@string/difficolta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/difficolta3"
+            android:text="@string/difficolta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:padding="@dimen/padding_istruzioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shield"
+            />
+        <TextView
+            android:padding="@dimen/padding_istruzioni"
+            android:textSize="@dimen/size_istruzioni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scudo_suggerimento" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

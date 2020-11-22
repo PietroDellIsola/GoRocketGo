@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C196"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_margin="@dimen/margini_bottoni"
+        android:text="Indietro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="23sp"
+        android:onClick="onClickindietro"
+        android:padding="10dp"
+        android:background="@drawable/my_button"
+        android:textColor="@color/textButtonColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="@string/preferenze_testo"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/size_text_button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#FFFFFF"
+        android:padding="15dp">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/ivVisualizzatoreImmaginiTerreno"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/neptune" />
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/ivVisualizzatoreImmaginiRazzo"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rocket1" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listaOggetti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8080FF">
+    </ListView>
+
+</LinearLayout>
+
+
+

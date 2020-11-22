@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"/>
+
+    <!-- android:scaleType="fitXY"
+                ADATTA L'IMMAGINE ALLO SCHERMO-->
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/idbg_terrain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--OSTACOLI-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+        <ImageView
+            android:tag="ostacolo"
+            android:contentDescription="@null"
+            android:id="@+id/ostacolo15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asteroid2"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/shield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shield"
+        android:visibility="invisible"
+        />
+    <!--android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"-->
+
+    <!--L'IMMAGINE DEL RAZZO VERRA' AGGIUNTA PROGRAMMATICAMENTE NON NEL FILE XML
+         POICHE' L'UTENTE POTRA' PERSONALIZZARLO-->
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/rocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        />
+    <!--android:background="@drawable/rocket1"-->
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/fire"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/fire"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/smoke"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/smoke"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/crash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/crash_img"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvDistanzaPercorsa"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:text="DISTANZA PERCORSA: 0 km"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="09"
+        android:id="@+id/tvcountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"/>
+
+</RelativeLayout>

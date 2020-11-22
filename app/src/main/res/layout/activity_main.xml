@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_1">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/tvRecordMain"
+            android:textColor="#FFBBBB"
+            android:layout_width="@dimen/dim_bottoni"
+            android:layout_height="wrap_content"
+            android:text="RECORD"
+            android:gravity="center"
+            android:textSize="@dimen/size_text_button"
+            android:padding="@dimen/padding_button"/>
+        <Button
+            android:layout_margin="@dimen/margini_bottoni"
+            android:text="@string/gioca_button"
+            android:layout_width="@dimen/dim_bottoni"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_text_button"
+            android:onClick="giocaOnClick"
+            android:padding="@dimen/padding_button"
+            android:background="@drawable/my_button"
+            android:textColor="@color/textButtonColor"/>
+
+        <Button
+            android:layout_margin="@dimen/margini_bottoni"
+            android:text="@string/personalizzazione_button"
+            android:layout_width="@dimen/dim_bottoni"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_text_button"
+            android:onClick="personalizzazioneOnClick"
+            android:padding="@dimen/padding_button"
+            android:background="@drawable/my_button"
+            android:textColor="@color/textButtonColor"/>
+        <Button
+            android:layout_margin="@dimen/margini_bottoni"
+            android:text="@string/comandi_button"
+            android:layout_width="@dimen/dim_bottoni"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_text_button"
+            android:onClick="comandiOnClick"
+            android:padding="@dimen/padding_button"
+            android:background="@drawable/my_button"
+            android:textColor="@color/textButtonColor"/>
+        <Button
+            android:layout_margin="@dimen/margini_bottoni"
+            android:text="@string/esci_button"
+            android:layout_width="@dimen/dim_bottoni"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_text_button"
+            android:onClick="esciOnClick"
+            android:padding="@dimen/padding_button"
+            android:background="@drawable/my_button"
+            android:textColor="@color/textButtonColor"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="©Pietro Dell'Isola"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#5F5F5F"
+        android:paddingRight="5dp"/>
+
+</RelativeLayout>
